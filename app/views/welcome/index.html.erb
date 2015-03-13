@@ -1,0 +1,11 @@
+<%= image_tag @fetcher.spotify_entity["artists"][0]["images"][0]["url"] %>
+<br>
+<% @fetcher.spotify_albums["albums"][0]["tracks"]["items"].each do |url| %>
+  <li>
+  <video controls name="med">
+        <source src= <%= url["preview_url"] %>
+    </video>
+  </li>
+<% end %>
+
+<iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5wQvc26H9ogMioWKB43UH1" <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A5wQvc26H9ogMioWKB43UH1" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
